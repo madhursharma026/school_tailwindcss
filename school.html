@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Edible Schoolyard NYC</title>
+    <title>Home - Tailwindcss School NYC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </head>
 <script>
     tailwind.config = {
@@ -33,12 +34,18 @@
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow"></div>
                 <div>
-                    <a href="#Home" class="lg:inline-block mr-5 text-xl text-navbarText">Home</a>
-                    <a href="#About" class="lg:inline-block mr-5 text-xl text-navbarText">About</a>
-                    <a href="#Contact" class="lg:inline-block mr-5 text-xl text-navbarText">Contact</a>
-                    <a href="#Admission" class="lg:inline-block mr-5 text-xl text-navbarText">Admission</a>
-                    <a href="#Events" class="lg:inline-block mr-5 text-xl text-navbarText">Events</a>
-                    <a href="#News" class="lg:inline-block mr-5 text-xl text-navbarText">News</a>
+                    <a href="https://school-tailwindcss.vercel.app/school.html"
+                        class="lg:inline-block mr-5 text-xl text-navbarText">Home</a>
+                    <a href="https://school-about.vercel.app/About.html"
+                        class="lg:inline-block mr-5 text-xl text-navbarText">About</a>
+                    <a href="https://school-contact.vercel.app/contact.html"
+                        class="lg:inline-block mr-5 text-xl text-navbarText">Contact</a>
+                    <a href="https://school-admission.vercel.app/Admission.html"
+                        class="lg:inline-block mr-5 text-xl text-navbarText">Admission</a>
+                    <a href="https://school-event.vercel.app/event.html"
+                        class="lg:inline-block mr-5 text-xl text-navbarText">Events</a>
+                    <a href="https://school-press.vercel.app/press.html"
+                        class="lg:inline-block mr-5 text-xl text-navbarText">News</a>
                     <a href="#Gallery" class="lg:inline-block mr-10 text-xl text-navbarText">Gallery</a>
                 </div>
             </div>
@@ -46,13 +53,13 @@
         <nav
             class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
-                <a href="/" class="flex items-center">
+                <a href="https://school-tailwindcss.vercel.app/school.html" class="flex items-center">
                     <img src="https://www.edibleschoolyardnyc.org/wp-content/themes/edibleschoolyard/assets/img/logo-horizontal.svg"
                         class="h-16" alt="Logo">
                 </a>
-                <div class="flex md:order-2">
+                <div class="flex lg:order-2">
                     <button data-collapse-toggle="navbar-sticky" type="button"
-                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 "
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2 "
                         aria-controls="navbar-sticky" aria-expanded="false">
                         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -62,44 +69,58 @@
                         </svg>
                     </button>
                 </div>
-                <!-- <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
                     <ul
-                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                            <a href="https://school-tailwindcss.vercel.app/school.html"
+                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            <a href="https://school-about.vercel.app/About.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            <a href="https://school-contact.vercel.app/contact.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            <a href="https://school-admission.vercel.app/Admission.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Admission</a>
+                        </li>
+                        <li>
+                            <a href="https://school-event.vercel.app/event.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Events</a>
+                        </li>
+                        <li>
+                            <a href="https://school-press.vercel.app/press.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">News</a>
+                        </li>
+                        <li>
+                            <a href="#Gallery"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </div>
         </nav>
+        <hr>
     </div>
     <div class="lg:pt-24"></div>
     <div class="flex justify-center items-center"
         style="background-image: url(https://www.edibleschoolyardnyc.org/wp-content/uploads/2019/02/WEB-IMG_8541-copy-e1549043499859.jpg); height:80vh; width: 100%; background-position:center; background-repeat: no-repeat; background-size: cover;">
-        <div class="text-white text-4xl max-w-2xl text-center tracking-widest">
-            <b>SUPPORTING EDIBLE EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
+        <!-- <div class="text-white text-4xl max-w-2xl text-center tracking-widest"> -->
+        <div class="text-4xl max-w-2xl text-center tracking-widest">
+            <b class="px-3">SUPPORTING EDIBLE EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
             <a href="#" class="block bg-green text-lg p-3" style="margin: auto; max-width: 250px; margin-top: 20px;">
                 <b>2021-2022 School Year Achievements</b>
             </a>
             <div class="grid grid-rows-1 grid-flow-col gap-2" style="margin: auto; max-width: 250px;">
-                <button class="bg-white hover:bg-green text-black p-1 hover:text-white mt-3 text-base">
+                <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
                     PLAY VIDEO
                 </button>
-                <button class="bg-white hover:bg-green text-black p-1 hover:text-white mt-3 text-base">
+                <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
                     GET INVOLVED
                 </button>
             </div>
@@ -122,17 +143,17 @@
                 </div>
 
                 <h1 class="text-3xl text-white mt-20 mb-5">
-                    Edible Schoolyard NYC’s mission is to support edible education for every child in New York City. We
+                    Tailwindcss School NYC’s mission is to support edible education for every child in New York City. We
                     partner with New York City public schools to cultivate healthy students and communities through
                     hands-on
                     cooking
                     and gardening education, transforming children’s relationship with food.
                 </h1>
                 <div class="grid grid-rows-1 grid-flow-col gap-2" style="margin: auto; max-width: 250px;">
-                    <button class="bg-transparent border text-white p-1 hover:text-black mt-3 text-sm">
+                    <button class="bg-transparent border text-white p-1 sm:hover:text-black mt-3 text-sm">
                         OUR PROGRAMS
                     </button>
-                    <button class="bg-transparent border text-white p-1 hover:text-black mt-3 text-sm">
+                    <button class="bg-transparent border text-white p-1 sm:hover:text-black mt-3 text-sm">
                         LEARN MORE
                     </button>
                 </div>
@@ -142,7 +163,7 @@
         <div class="px-3">
             <div style="max-width: 950px; margin: auto; text-align: center; margin-top: -100px;">
                 <iframe width="100%" height="450" src="https://www.youtube.com/embed/0AlcysDzFYk"
-                    title="About Edible Schoolyard NYC" frameborder="0"
+                    title="About Tailwindcss School NYC" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -242,7 +263,7 @@
                                 Come See Us in Action
                             </h5>
                             <p class="mb-4 text-base text-white">
-                                Make an appointment to tour an Edible Schoolyard NYC garden and kitchen classroom.
+                                Make an appointment to tour an Tailwindcss School NYC garden and kitchen classroom.
                             </p>
                             <button type="button" class="bg-green border px-4 py-1 text-white">
                                 Visit Us
@@ -305,9 +326,9 @@
 
 
     <div class="flex justify-center items-center"
-        style="background-image: url(https://www.edibleschoolyardnyc.org/wp-content/uploads/2017/07/IMG_6461.jpg); height:50vh; width: 100%; background-position:center; background-repeat: no-repeat; background-size: cover;">
+        style="background-image: url(https://www.edibleschoolyardnyc.org/wp-content/uploads/2017/07/IMG_6461.jpg); height:60vh; width: 100%; background-position:center; background-repeat: no-repeat; background-size: cover;">
         <div class="text-center tracking-widest px-5">
-            <div class="max-w-2xl p-6 bg-white">
+            <div class="max-w-2xl p-6 bg-white py-3">
                 <img src="https://www.edibleschoolyardnyc.org/wp-content/uploads/2018/09/Page-1.png" alt="#ImgNotFound"
                     style="max-width: 100px; margin: auto;">
                 <span class="text-2xl">"So many problems are tied together, and they could all be solved by having a
@@ -331,13 +352,49 @@
         <h1 class="text-xl"><b>JOIN OUR MAILING LIST</b></h1>
         <p class="text-base py-4"><b>Sign up to receive updates about our programs, events, workshops, and more.</b></p>
         <div class="grid lg:grid-rows-1 grid-rows-2 sm:grid-flow-col gap-4 justify-center items-center px-3">
-            <input type="text" class="border-2 border-black px-2" placeholder="First Name">
-            <input type="text" class="border-2 border-black px-2" placeholder="Last Name">
-            <input type="text" class="border-2 border-black px-2" placeholder="Email">
-            <input type="text" class="border-2 border-black px-2" placeholder="Zip Code">
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="First Name"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-first-name">
+                    First Name
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text">
+            </div>
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="Last Name"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-last-name">
+                    Last Name
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-last-name" type="text">
+            </div>
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="Email"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-email">
+                    Email
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-email" type="text">
+            </div>
+            <!-- <input type="text" class="border-2 border-black px-2" placeholder="Zip Code"> -->
+            <div>
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-left"
+                    for="grid-zip-code">
+                    Zip Code
+                </label>
+                <input
+                    class="block w-full border border-gray-500 py-1 px-2 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-zip-code" type="text">
+            </div>
         </div>
         <button type="button"
-            class="bg-black hover:bg-green text-white hover:text-black px-4 py-2 mt-5">SUBSCRIBE</button>
+            class="bg-black sm:hover:bg-green text-white sm:hover:text-black px-4 py-2 mt-5">SUBSCRIBE</button>
     </div>
 
     <div class="text-center tracking-widest px-3 py-5">
@@ -347,11 +404,17 @@
             <a href="#press" class="text-base"><b>PRESS</b></a>
             <a href="#careers" class="text-base"><b>CAREERS</b></a>
             <b>
-                    <a href="#fb" class="text-base"><i class="fa fa-facebook-f px-2"></i></a>
-                    <a href="#twitter" class="text-base"><i class="fa fa-twitter px-2"></i></a>
-                    <a href="#insta" class="text-base"><i class="fa fa-instagram px-2"></i></a>
-                </b>
+                <a href="#fb" class="text-base"><i class="fa fa-facebook-f px-2"></i></a>
+                <a href="#twitter" class="text-base"><i class="fa fa-twitter px-2"></i></a>
+                <a href="#insta" class="text-base"><i class="fa fa-instagram px-2"></i></a>
+            </b>
         </div>
+        <p class="text-sm text-gray-500 mt-5">
+            © Copyright 2019 Tailwindcss School NYC. All rights reserved.
+            <a href="#terms" class="underline">Terms of Use</a> and
+            <a href="#policy" class="underline">Privacy Policy</a>.
+            <a href="#credit" class="underline">Site Credits.</a>
+        </p>
     </div>
 
 
