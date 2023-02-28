@@ -73,6 +73,7 @@
 <script>
     window.onload = function () {
         document.getElementById("header").style.position = "fixed";
+        document.getElementById("header").style.marginTop = "0";
     }
 
     window.onscroll = function () {
@@ -81,7 +82,7 @@
             document.getElementById("header").style.marginTop = "-76px";
         } else {
             document.getElementById("header").style.position = "fixed";
-            document.getElementById("header").style.marginTop = "0px";
+            document.getElementById("header").style.marginTop = "0";
         }
     }
 </script>
@@ -114,7 +115,7 @@
                 </div>
             </nav>
             <nav
-                class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex">
+                class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex" style="margin-top: -76px;">
                 <div class="container flex flex-wrap items-center justify-between mx-auto">
                     <a href="https://school-tailwindcss.vercel.app/school.html" class="flex items-center">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTuMdkg5uExhqnoTkIS1Tznf93WP0P2crfIJkN32wcmDDNWr6Is9eePJqtjBPinWwfH_c&usqp=CAU"
