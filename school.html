@@ -38,21 +38,15 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: 80%;
-        top: 0;
+        height: 70%;
+        top: 65px;
         left: 0;
         background: rgba(0, 0, 0, 0.4);
     }
 
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
         .bgImage::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 80%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.4);
+            height: 73.35%;
         }
     }
 
@@ -76,90 +70,110 @@
     }
 </style>
 
+<script>
+    window.onload = function () {
+        document.getElementById("header").style.position = "fixed";
+    }
+
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 100) {
+            document.getElementById("header").style.position = "relative";
+            document.getElementById("header").style.marginTop = "-76px";
+        } else {
+            document.getElementById("header").style.position = "fixed";
+            document.getElementById("header").style.marginTop = "0px";
+        }
+    }
+</script>
+
 <body>
-    <div class="fixed w-screen" style="z-index: 1000;">
-        <nav class="flex items-center justify-between flex-wrap bg-navbarBG p-3 lg:flex hidden">
-            <div class="flex items-center flex-shrink-0 text-white mr-6 ml-4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTuMdkg5uExhqnoTkIS1Tznf93WP0P2crfIJkN32wcmDDNWr6Is9eePJqtjBPinWwfH_c&usqp=CAU"
-                    alt="#ImgNotFound" style="height: 84px;">
-            </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow"></div>
-                <div>
-                    <a href="https://school-tailwindcss.vercel.app/school.html"
-                        class="lg:inline-block mr-5 text-xl text-navbarText">Home</a>
-                    <a href="https://school-about.vercel.app/About.html"
-                        class="lg:inline-block mr-5 text-xl text-navbarText">About</a>
-                    <a href="https://school-contact.vercel.app/contact.html"
-                        class="lg:inline-block mr-5 text-xl text-navbarText">Contact</a>
-                    <a href="https://school-admission.vercel.app/Admission.html"
-                        class="lg:inline-block mr-5 text-xl text-navbarText">Admission</a>
-                    <a href="https://school-event.vercel.app/event.html"
-                        class="lg:inline-block mr-5 text-xl text-navbarText">Events</a>
-                    <a href="https://school-press.vercel.app/press.html"
-                        class="lg:inline-block mr-5 text-xl text-navbarText">News</a>
-                    <a href="#Gallery" class="lg:inline-block mr-10 text-xl text-navbarText">Gallery</a>
-                </div>
-            </div>
-        </nav>
-        <nav
-            class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex">
-            <div class="container flex flex-wrap items-center justify-between mx-auto">
-                <a href="https://school-tailwindcss.vercel.app/school.html" class="flex items-center">
+    <div id="header" style="z-index: 1000;">
+        <div class="w-screen">
+            <nav class="flex items-center justify-between flex-wrap bg-navbarBG p-3 lg:flex hidden">
+                <div class="flex items-center flex-shrink-0 text-white mr-6 ml-4">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTuMdkg5uExhqnoTkIS1Tznf93WP0P2crfIJkN32wcmDDNWr6Is9eePJqtjBPinWwfH_c&usqp=CAU"
-                        class="h-16" alt="Logo">
-                </a>
-                <div class="flex lg:order-2">
-                    <button data-collapse-toggle="navbar-sticky" type="button"
-                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2 "
-                        aria-controls="navbar-sticky" aria-expanded="false">
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
+                        alt="#ImgNotFound" style="height: 40px;">
                 </div>
-                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
-                    <ul
-                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <a href="https://school-tailwindcss.vercel.app/school.html"
-                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="https://school-about.vercel.app/About.html"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                        </li>
-                        <li>
-                            <a href="https://school-contact.vercel.app/contact.html"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                        </li>
-                        <li>
-                            <a href="https://school-admission.vercel.app/Admission.html"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Admission</a>
-                        </li>
-                        <li>
-                            <a href="https://school-event.vercel.app/event.html"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Events</a>
-                        </li>
-                        <li>
-                            <a href="https://school-press.vercel.app/press.html"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">News</a>
-                        </li>
-                        <li>
-                            <a href="#Gallery"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
-                        </li>
-                    </ul>
+                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="text-sm lg:flex-grow"></div>
+                    <div>
+                        <a href="https://school-tailwindcss.vercel.app/school.html"
+                            class="lg:inline-block mr-5 text-xl text-navbarText">Home</a>
+                        <a href="https://school-about.vercel.app/About.html"
+                            class="lg:inline-block mr-5 text-xl text-navbarText">About</a>
+                        <a href="https://school-contact.vercel.app/contact.html"
+                            class="lg:inline-block mr-5 text-xl text-navbarText">Contact</a>
+                        <a href="https://school-admission.vercel.app/Admission.html"
+                            class="lg:inline-block mr-5 text-xl text-navbarText">Admission</a>
+                        <a href="https://school-event.vercel.app/event.html"
+                            class="lg:inline-block mr-5 text-xl text-navbarText">Events</a>
+                        <a href="https://school-press.vercel.app/press.html"
+                            class="lg:inline-block mr-5 text-xl text-navbarText">News</a>
+                        <a href="#Gallery" class="lg:inline-block mr-10 text-xl text-navbarText">Gallery</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <hr>
+            </nav>
+            <nav
+                class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex">
+                <div class="container flex flex-wrap items-center justify-between mx-auto">
+                    <a href="https://school-tailwindcss.vercel.app/school.html" class="flex items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTuMdkg5uExhqnoTkIS1Tznf93WP0P2crfIJkN32wcmDDNWr6Is9eePJqtjBPinWwfH_c&usqp=CAU"
+                            class="h-10" alt="Logo">
+                    </a>
+                    <div class="flex lg:order-2 mr-5">
+                        <button data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden focus:outline-none focus:ring-2 "
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+                        id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="https://school-tailwindcss.vercel.app/school.html"
+                                    class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="https://school-about.vercel.app/About.html"
+                                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            </li>
+                            <li>
+                                <a href="https://school-contact.vercel.app/contact.html"
+                                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            </li>
+                            <li>
+                                <a href="https://school-admission.vercel.app/Admission.html"
+                                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Admission</a>
+                            </li>
+                            <li>
+                                <a href="https://school-event.vercel.app/event.html"
+                                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Events</a>
+                            </li>
+                            <li>
+                                <a href="https://school-press.vercel.app/press.html"
+                                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">News</a>
+                            </li>
+                            <li>
+                                <a href="#Gallery"
+                                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 md:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+        </div>
     </div>
-    <div class="lg:pt-24"></div>
+    <div class="lg:pt-16"></div>
+
     <div class="bgImage"></div>
     <div class="content">
         <div class="text-4xl text-white max-w-2xl text-center tracking-widest">
