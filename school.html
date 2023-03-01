@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tailwindcss School NYC</title>
+    <title>Home - Tailwindcss School</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
@@ -79,9 +79,11 @@
     window.onscroll = function () {
         if (document.documentElement.scrollTop > 100) {
             document.getElementById("header").style.position = "relative";
+            document.getElementById("header").style.transition = "top 0.4s ease-out";
             document.getElementById("header").style.marginTop = "-76px";
         } else {
             document.getElementById("header").style.position = "fixed";
+            document.getElementById("header").style.transition = "top 0.4s ease-out";
             document.getElementById("header").style.marginTop = "0";
         }
     }
@@ -110,7 +112,7 @@
                             class="lg:inline-block mr-5 text-xl text-navbarText">Events</a>
                         <a href="https://school-press.vercel.app/press.html"
                             class="lg:inline-block mr-5 text-xl text-navbarText">News</a>
-                        <a href="#Gallery" class="lg:inline-block mr-10 text-xl text-navbarText">Gallery</a>
+                        <a href="https://school-gallery.vercel.app/gallery.html" class="lg:inline-block mr-10 text-xl text-navbarText">Gallery</a>
                     </div>
                 </div>
             </nav>
@@ -163,7 +165,7 @@
                                     class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">News</a>
                             </li>
                             <li>
-                                <a href="#Gallery"
+                                <a href="https://school-gallery.vercel.app/gallery.html"
                                     class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
                             </li>
                         </ul>
@@ -178,7 +180,7 @@
     <div class="bgImage"></div>
     <div class="content">
         <div class="text-4xl text-white max-w-2xl text-center tracking-widest">
-            <b class="px-3">SUPPORTING EDIBLE EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
+            <b class="px-3">SUPPORTING TAILWINDCSS EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
             <a href="https://school-event.vercel.app/event.html" class="block bg-green text-lg p-3"
                 style="margin: auto; max-width: 250px; margin-top: 20px;">
                 <b>2021-2022 School Year Achievements</b>
@@ -210,7 +212,7 @@
                 </div>
 
                 <h1 class="text-3xl text-white mt-20 mb-5">
-                    Tailwindcss School NYC’s mission is to support edible education for every child in New York City. We
+                    Tailwindcss School NYC’s mission is to support tailwindcss education for every child in New York City. We
                     partner with New York City public schools to cultivate healthy students and communities through
                     hands-on
                     cooking
