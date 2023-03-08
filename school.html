@@ -45,16 +45,16 @@
     }
 
     .openPositionBtn {
-        background: #253053;
-        border: 2px solid #253053;
+        background: transparent;
+        border: 2px solid white;
         color: white;
         font-size: 16px;
     }
 
     .openPositionBtn:hover {
-        background: #021fa9;
-        border: 2px solid #021fa9;
-        color: white;
+        background: white;
+        border: 2px solid white;
+        color: #08A842;
     }
 
     .salesBtn {
@@ -66,8 +66,8 @@
 
     .salesBtn:hover {
         background: white;
-        border: 2px solid #3D5DFF;
-        color: #3D5DFF;
+        border: 2px solid white;
+        color: #08A842;
     }
 
     @media (max-width: 1024px) {
@@ -99,7 +99,7 @@
             line-height: 35px;
         }
 
-        .bgImage{
+        .bgImage {
             height: 100vh;
         }
     }
@@ -213,7 +213,9 @@
     </div>
     <div class="lg:pt-16"></div>
 
-    <div class="bgImage bg-green"></div>
+    <div class="bgImage bg-green">
+        <img src="https://marketing-assets-cms.hubstaff.com/public/images/utils/hubstaff-double-spoke.svg" alt="#ImgNotFound" style="width: 100%;">
+    </div>
     <div class="content sm:pt-0 pt-28">
         <div class="sectionHeading text-white lg:max-w-3xl text-center tracking-widest">
             <b class="px-3">SUPPORTING TAILWIND CSS EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
@@ -221,7 +223,8 @@
                 style="margin: auto; max-width: 350px; margin-top: 20px;">
                 <b>2021-2022 School Year Achievements</b>
             </a>
-            <div class="grid md:grid-rows-1 md:grid-flow-col gap-2" style="margin: auto; max-width: 350px; margin-top: 20px;">
+            <div class="grid md:grid-rows-1 md:grid-flow-col gap-2"
+                style="margin: auto; max-width: 350px; margin-top: 20px;">
                 <!-- <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
                     PLAY VIDEO
                 </button>
