@@ -30,7 +30,8 @@
     }
 
     .bgImage {
-        background-image: url('https://www.edibleschoolyardnyc.org/wp-content/uploads/2019/02/WEB-IMG_8541-copy-e1549043499859.jpg');
+        /* background-image: url('https://www.edibleschoolyardnyc.org/wp-content/uploads/2019/02/WEB-IMG_8541-copy-e1549043499859.jpg'); */
+        background: #294DFF;
         height: 80vh;
         width: 100%;
         background-position: center;
@@ -38,14 +39,35 @@
         background-size: cover;
     }
 
-    .bgImage::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        top: 65px;
-        left: 0;
-        background: rgba(0, 0, 0, 0.4);
+    .sectionHeading {
+        font-size: calc(30px + 1vw);
+        line-height: 50px;
+    }
+
+    .openPositionBtn {
+        background: #253053;
+        border: 2px solid #253053;
+        color: white;
+        font-size: 16px;
+    }
+
+    .openPositionBtn:hover {
+        background: #021fa9;
+        border: 2px solid #021fa9;
+        color: white;
+    }
+
+    .salesBtn {
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        font-size: 16px;
+    }
+
+    .salesBtn:hover {
+        background: white;
+        border: 2px solid #021fa9;
+        color: #021fa9;
     }
 
     @media (max-width: 1024px) {
@@ -57,19 +79,24 @@
     @media (min-width: 767px) {
         .content {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         .content {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             width: 95%;
             transform: translate(-50%, -50%);
+        }
+
+        .sectionHeading {
+            font-size: calc(30px + 1vw);
+            line-height: 35px;
         }
     }
 </style>
@@ -184,28 +211,37 @@
 
     <div class="bgImage"></div>
     <div class="content">
-        <div class="text-4xl text-white max-w-2xl text-center tracking-widest">
-            <b class="px-3">SUPPORTING TAILWINDCSS EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
+        <div class="sectionHeading text-white lg:max-w-3xl text-center tracking-widest">
+            <b class="px-3">SUPPORTING TAILWIND CSS EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
             <a href="https://school-event.vercel.app/event.html" class="block bg-green text-lg p-3"
-                style="margin: auto; max-width: 250px; margin-top: 20px;">
+                style="margin: auto; max-width: 350px; margin-top: 20px;">
                 <b>2021-2022 School Year Achievements</b>
             </a>
-            <div class="grid grid-rows-1 grid-flow-col gap-2" style="margin: auto; max-width: 250px;">
-                <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
+            <div class="grid grid-rows-1 grid-flow-col gap-2" style="margin: auto; max-width: 350px; margin-top: 20px;">
+                <!-- <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
                     PLAY VIDEO
                 </button>
                 <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
                     GET INVOLVED
-                </button>
+                </button> -->
+                <button type="button" class="btn openPositionBtn px-3 py-2"><b>Our Program</b></button>
+                <button type="button" class="btn salesBtn px-3 py-2"><b>Get Involved</b></button>
             </div>
         </div>
     </div>
 
-    <div style="width: 100%; height: 50px; border-top-left-radius: 50%; border-top-right-radius: 50%; margin-top: -10vh;"
-        class="bg-green lg:flex hidden">
+    <div style="width: 100%; height: 150px; border-top-left-radius: 100%; border-top-right-radius: 100%; margin-top: -10vh;"
+        class="bg-white lg:mb-0 mb-24">
     </div>
+
+    <div style="max-width: 950px; margin: auto; text-align: center;">
+        <img src="https://img.staticmb.com/mbcontent/images/uploads/2021/8/schools-entrance.jpg" alt="#ImgNotFound"
+            style="width: 80%; margin-top: -250px; margin-left: 10%;">
+    </div>
+
+
     <div style="background: #F8F4F1;">
-        <div class="pb-60 bg-green px-3">
+        <div class="pb-60 bg-green px-3 mt-10">
             <div style="max-width: 950px; margin: auto; text-align: center;">
                 <div class="grid grid-rows-1 grid-flow-col gap-2 lg-pt-0 pt-10" style="margin: auto; max-width: 250px;">
                     <img src="https://www.edibleschoolyardnyc.org/wp-content/uploads/2018/09/unnamed.png"
@@ -243,7 +279,7 @@
         </div>
 
         <div class="px-3">
-            <div style="max-width: 950px; margin: auto; text-align: center; margin-top: -100px;">
+            <div style="max-width: 950px; margin: auto; text-align: center; margin-top: -10vh;">
                 <iframe width="100%" height="450" src="https://www.youtube.com/embed/0AlcysDzFYk"
                     title="About Tailwindcss School NYC" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -273,12 +309,10 @@
                                 Share & Advocate
                             </h5>
                             <p class="mb-4 text-base text-white">
-                                Your support means that more New York City public school kids can thrive. Thank you
-                                for
-                                your
-                                generosity!
+                                Looking for logos and fact sheets? Interested in sharing some of our amazing
+                                stories?
                             </p>
-                            <button type="button" class="bg-green border px-4 py-1 text-white" style="bottom: 0;">
+                            <button type="button" class="bg-green border px-4 py-1 text-white">
                                 Download Media Kit
                             </button>
                         </div>
@@ -300,7 +334,7 @@
                                 your
                                 generosity!
                             </p>
-                            <button type="button" class="bg-green border px-4 py-1 text-white" style="bottom: 0;">
+                            <button type="button" class="bg-green border px-4 py-1 text-white">
                                 Donate Here
                             </button>
                         </div>
@@ -317,12 +351,12 @@
                                 Pledge Your Birthday
                             </h5>
                             <p class="mb-4 text-base text-white">
-                                Your support means that more New York City public school kids can thrive. Thank you
-                                for
-                                your
-                                generosity!
+                                This year, ask for gifts that keep on giving. Donations that bring hands-on
+                                gardening
+                                and
+                                cooking education to public schools of NYC.
                             </p>
-                            <button type="button" class="bg-green border px-4 py-1 text-white" style="bottom: 0;">
+                            <button type="button" class="bg-green border px-4 py-1 text-white">
                                 Donate Here
                             </button>
                         </div>
@@ -339,12 +373,11 @@
                                 Become A Volunteer
                             </h5>
                             <p class="mb-4 text-base text-white">
-                                Your support means that more New York City public school kids can thrive. Thank you
-                                for
+                                We offer a range of fun, hands-on volunteer opportunities to suit your interests and
                                 your
-                                generosity!
+                                schedule.
                             </p>
-                            <button type="button" class="bg-green border px-4 py-1 text-white" style="bottom: 0;">
+                            <button type="button" class="bg-green border px-4 py-1 text-white">
                                 Volunteer Here
                             </button>
                         </div>
@@ -361,12 +394,9 @@
                                 Come See Us in Action
                             </h5>
                             <p class="mb-4 text-base text-white">
-                                Your support means that more New York City public school kids can thrive. Thank you
-                                for
-                                your
-                                generosity!
+                                Make an appointment to tour an Tailwindcss School NYC garden and kitchen classroom.
                             </p>
-                            <button type="button" class="bg-green border px-4 py-1 text-white" style="bottom: 0;">
+                            <button type="button" class="bg-green border px-4 py-1 text-white">
                                 Visit Us
                             </button>
                         </div>
