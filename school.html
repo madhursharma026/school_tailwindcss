@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
 </head>
 <script>
     tailwind.config = {
@@ -30,18 +32,8 @@
     }
 
     .bgImage {
-        /* background-image: url('https://www.edibleschoolyardnyc.org/wp-content/uploads/2019/02/WEB-IMG_8541-copy-e1549043499859.jpg'); */
-        /* background: #294DFF; */
-        height: 90vh;
+        height: 0;
         width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .sectionHeading {
-        font-size: calc(30px + 1vw);
-        line-height: 50px;
     }
 
     .openPositionBtn {
@@ -70,38 +62,8 @@
         color: #08A842;
     }
 
-    @media (max-width: 1024px) {
-        .bgImage::after {
-            height: 73.35%;
-        }
-    }
-
-    @media (min-width: 767px) {
-        .content {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    @media (max-width: 992px) {
-        .content {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            width: 95%;
-            transform: translate(-50%, -50%);
-        }
-
-        .sectionHeading {
-            font-size: calc(30px + 1vw);
-            line-height: 35px;
-        }
-
-        .bgImage {
-            height: 100vh;
-        }
+    .faqsHoverEffect:hover {
+        color: #08A842;
     }
 
     @media (max-width: 576px) {
@@ -118,6 +80,26 @@
             color: white;
             font-size: 16px;
         }
+
+        .curveImg {
+            margin-top: -200px;
+        }
+
+        .faqsHoverEffect:hover {
+            color: black;
+        }
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
     }
 </style>
 
@@ -233,81 +215,46 @@
         <img src="https://marketing-assets-cms.hubstaff.com/public/images/utils/hubstaff-double-spoke.svg"
             alt="#ImgNotFound" style="width: 100%;">
     </div>
-    <div class="content sm:pt-0 pt-28">
-        <div class="sectionHeading text-white lg:max-w-3xl text-center tracking-widest">
-            <b class="px-3">SUPPORTING TAILWIND CSS EDUCATION FOR EVERY CHILD IN NEW YORK CITY</b><br>
-            <a href="https://school-event.vercel.app/event.html" class="block bg-white text-black text-lg p-3"
-                style="margin: auto; max-width: 350px; margin-top: 20px;">
-                <b>2021-2022 School Year Achievements</b>
-            </a>
-            <div class="grid md:grid-rows-1 md:grid-flow-col gap-2"
-                style="margin: auto; max-width: 350px; margin-top: 20px;">
-                <!-- <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
-                    PLAY VIDEO
-                </button>
-                <button class="bg-white sm:hover:bg-green text-black p-1 sm:hover:text-white mt-3 text-base">
-                    GET INVOLVED
-                </button> -->
-                <button type="button" class="btn openPositionBtn px-3 py-2"><b>Our Program</b></button>
-                <button type="button" class="btn salesBtn px-3 py-2"><b>Get Involved</b></button>
-            </div>
-        </div>
-    </div>
-
-    <div style="width: 100%; height: 150px; border-top-left-radius: 100%; border-top-right-radius: 100%; margin-top: -13vh;"
-        class="bg-white lg:mb-0 mb-16">
-    </div>
-
-    <div style="max-width: 950px; margin: auto; text-align: center;">
-        <img src="https://img.staticmb.com/mbcontent/images/uploads/2021/8/schools-entrance.jpg" alt="#ImgNotFound"
-            style="width: 80%; margin-top: -250px; margin-left: 10%;">
-    </div>
-
-
     <div style="background: #F8F4F1;">
-        <div class="pb-60 bg-green px-3 mt-10">
+        <div class="sm:pb-60 pb-48 bg-green px-3 pt-24">
             <div style="max-width: 950px; margin: auto; text-align: center;">
-                <div class="grid grid-rows-1 grid-flow-col gap-2 lg-pt-0 pt-10" style="margin: auto; max-width: 250px;">
-                    <img src="https://www.edibleschoolyardnyc.org/wp-content/uploads/2018/09/unnamed.png"
-                        alt="#ImgNotFound" class="invisible">
-                    <img src="https://www.edibleschoolyardnyc.org/wp-content/uploads/2018/09/unnamed.png"
-                        alt="#ImgNotFound" width="90px" height="70px">
-                    <img src="https://www.edibleschoolyardnyc.org/wp-content/uploads/2018/09/unnamed.png"
-                        alt="#ImgNotFound" class="invisible">
-                </div>
-
-                <!-- <h1 class="text-3xl text-white mt-20 mb-5">
-                    Tailwindcss School NYC’s mission is to support tailwindcss education for every child in New York City. We
-                    partner with New York City public schools to cultivate healthy students and communities through
-                    hands-on
-                    cooking
-                    and gardening education, transforming children’s relationship with food.
-                </h1> -->
-                <h1 class="text-2xl mt-10 mb-5 text-white">
-                    Tailwindcss School NYC’s mission is to support tailwindcss education for every child in New York
-                    City. We
-                    partner with New York City public schools to cultivate healthy students and communities through
-                    hands-on
-                    cooking
-                    and gardening education, transforming children’s relationship with food.
+                <h1 class="text-xl mt-10 mb-5 text-white">
+                    <b class="px-3 text-4xl">SUPPORTING TAILWIND CSS EDUCATION FOR EVERY CHILD IN NEW YORK
+                        CITY</b>
+                    <br>
+                    <br>
+                    <span>
+                        Tailwindcss School NYC’s mission is to support tailwindcss education for every child in New York
+                        City. We partner with New York City public schools to cultivate healthy students and communities
+                        through
+                        hands-on cooking and gardening education, transforming children’s relationship with food.
+                    </span>
                 </h1>
-                <div class="grid grid-rows-1 grid-flow-col gap-2" style="margin: auto; max-width: 250px;">
-                    <button class="bg-transparent border text-white p-1 sm:hover:text-black mt-3 text-sm">
-                        OUR PROGRAMS
-                    </button>
-                    <button class="bg-transparent border text-white p-1 sm:hover:text-black mt-3 text-sm">
-                        LEARN MORE
-                    </button>
+                <a href="https://school-event.vercel.app/event.html" class="block bg-white text-black text-lg p-3"
+                    style="margin: auto; max-width: 350px; margin-top: 20px;">
+                    <b>2021-2022 School Year Achievements</b>
+                </a>
+                <div class="grid md:grid-rows-1 md:grid-flow-col gap-2"
+                    style="margin: auto; max-width: 350px; margin-top: 20px;">
+                    <button type="button" class="btn openPositionBtn px-3 py-2"><b>Our Program</b></button>
+                    <button type="button" class="btn salesBtn px-3 py-2"><b>Get Involved</b></button>
                 </div>
             </div>
         </div>
-
-        <div class="px-3">
-            <div style="max-width: 950px; margin: auto; text-align: center; margin-top: -10vh;">
-                <iframe width="100%" height="450" src="https://www.youtube.com/embed/0AlcysDzFYk"
-                    title="About Tailwindcss School NYC" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+        <div
+            style="width: 100%; height: 150px; border-top-left-radius: 100%; border-top-right-radius: 100%; margin-top: -8vh; background: #F8F4F1;">
+        </div>
+        <div class="px-3 curveImg">
+            <!-- <div style="max-width: 950px; margin: auto; text-align: center; margin-top: -20vh;">
+                <img src="https://img.staticmb.com/mbcontent/images/uploads/2021/8/schools-entrance.jpg"
+                    alt="#ImgNotFound" style="width: 90%; margin-left: 5%;">
+            </div> -->
+            <div class="container" style="max-width: 950px; margin: auto; text-align: center; margin-top: -20vh;">
+                <img src="https://img.staticmb.com/mbcontent/images/uploads/2021/8/schools-entrance.jpg"
+                    alt="#ImgNotFound" style="width: 90%; margin-left: 5%;">
+                <div class="top-left"><img
+                        src="https://marketing-assets-cms.hubstaff.com/public/images/utils/branding-white-dots-6x6.svg"
+                        alt="#ImgNotFound" style="width: 95px; height: 95px; margin-top: -50px;"></div>
             </div>
 
             <h1 class="text-center text-4xl mt-20 mb-5"><b>GET INVOLVED</b></h1>
@@ -502,6 +449,161 @@
             <a href="#follow" class="text-sm"><u><b>FOLLOW US ON INSTAGRAM</b></u></a>
         </div>
     </div>
+
+
+    <div id="accordionFlushExample" style="max-width: 950px; margin: auto; margin-top: 20px; margin-bottom: 100px;">
+        <h1 class="text-xl text-center mt-12"><b>YOUR QUESTIONS, ANSWERED</b></h1>
+        <h1 class="md:text-5xl text-4xl text-center mt-3"><b>Frequently asked questions</b></h1>
+
+        <div
+            class="rounded-none border border-l-0 border-r-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800 mt-8">
+            <h2 class="mb-0" id="flush-headingOne">
+                <button
+                    class="group faqsHoverEffect font-bold relative flex w-full items-center rounded-none border-0 bg-white py-8 px-5 text-left text-2xl text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseOne"
+                    aria-expanded="false" aria-controls="flush-collapseOne">
+                    Are children at lower risk of COVID-19 than adults?
+                    <span
+                        class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="!visible hidden border-0" data-te-collapse-item
+                aria-labelledby="flush-headingOne" data-te-parent="#accordionFlushExample">
+                <div class="py-4 px-5">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the
+                    <code>.accordion-flush</code> class. This is the second item's
+                    accordion body. Let's imagine this being filled with some actual
+                    content.
+                </div>
+            </div>
+        </div>
+        <div
+            class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+            <h2 class="mb-0" id="flush-headingTwo">
+                <button
+                    class="group faqsHoverEffect font-bold relative flex w-full items-center rounded-none border-0 bg-white py-8 px-5 text-left text-2xl text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseTwo"
+                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What is the role of children in transmission?
+                    <span
+                        class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="!visible hidden border-0" data-te-collapse-item
+                aria-labelledby="flush-headingTwo" data-te-parent="#accordionFlushExample">
+                <div class="py-4 px-5">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the
+                    <code>.accordion-flush</code> class. This is the second item's
+                    accordion body. Let's imagine this being filled with some actual
+                    content.
+                </div>
+            </div>
+        </div>
+        <div
+            class="rounded-none border border-l-0 border-r-0 border-t-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+            <h2 class="mb-0" id="flush-headingThree">
+                <button
+                    class="group faqsHoverEffect font-bold relative flex w-full items-center rounded-none border-0 bg-white py-8 px-5 text-left text-2xl text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseThree"
+                    aria-expanded="false" aria-controls="flush-collapseThree">
+                    What benefits would school re-opening provide?
+                    <span
+                        class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="!visible hidden" data-te-collapse-item
+                aria-labelledby="flush-headingThree" data-te-parent="#accordionFlushExample">
+                <div class="py-4 px-5">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the
+                    <code>.accordion-flush</code> class. This is the third item's
+                    accordion body. Nothing more exciting happening here in terms of
+                    content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look
+                    in a real-world application.
+                </div>
+            </div>
+        </div>
+        <div
+            class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+            <h2 class="mb-0" id="flush-headingFour">
+                <button
+                    class="group faqsHoverEffect font-bold relative flex w-full items-center rounded-none border-0 bg-white py-8 px-5 text-left text-2xl text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseFour"
+                    aria-expanded="false" aria-controls="flush-collapseFour">
+                    Checklist for students and children
+                    <span
+                        class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="!visible hidden" data-te-collapse-item
+                aria-labelledby="flush-headingFour" data-te-parent="#accordionFlushExample">
+                <div class="py-4 px-5">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the
+                    <code>.accordion-flush</code> class. This is the third item's
+                    accordion body. Nothing more exciting happening here in terms of
+                    content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look
+                    in a real-world application.
+                </div>
+            </div>
+        </div>
+        <div
+            class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+            <h2 class="mb-0" id="flush-headingFive">
+                <button
+                    class="group faqsHoverEffect font-bold relative flex w-full items-center rounded-none border-0 bg-white py-8 px-5 text-left text-2xl text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseFive"
+                    aria-expanded="false" aria-controls="flush-collapseFive">
+                    What should be monitored after re-opening of school?
+                    <span
+                        class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="!visible hidden" data-te-collapse-item
+                aria-labelledby="flush-headingFive" data-te-parent="#accordionFlushExample">
+                <div class="py-4 px-5">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the
+                    <code>.accordion-flush</code> class. This is the third item's
+                    accordion body. Nothing more exciting happening here in terms of
+                    content, but just filling up the space to make it look, at least
+                    at first glance, a bit more representative of how this would look
+                    in a real-world application.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<hr>
 
     <div class="text-center tracking-widest px-3 py-20">
         <h1 class="text-xl"><b>JOIN OUR MAILING LIST</b></h1>
